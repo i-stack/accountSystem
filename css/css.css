@@ -1,0 +1,130 @@
+.page {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-family: cursive;
+  font-size: 20px;
+  border-radius: 10px;
+  background: #fff;
+  background-image: linear-gradient(#f5f5f0 1.1rem, #ccc 1.2rem);
+  background-size: 100% 1.2rem;
+  line-height: 1.2rem;
+  padding: 1.4rem 0.5rem 0.3rem 4.5rem;
+}
+
+.page::before,
+.page::after {
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  width: 40%;
+  height: 10px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.page::before {
+  left: 15px;
+  transform: skew(-5deg) rotate(-5deg);
+}
+
+.page::after {
+  right: 15px;
+  transform: skew(5deg) rotate(5deg);
+}
+
+.page:hover::before,
+.page:hover::after {
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+}
+
+.margin {
+  position: absolute;
+  border-left: 1px solid #d88;
+  height: 100%;
+  left: 3.3rem;
+  top: 0;
+}
+
+.page p {
+  margin: 0;
+  text-indent: 1rem;
+  padding-bottom: 1.2rem;
+  color: black;
+  line-height: 20px;
+      text-align: left;
+      font-size: 18px;
+}
+.xiugai {
+  text-align: end;
+    margin: 0px 5px -10px 0;
+    font-size: 16px;
+}
+.tb{
+  display: none;
+}
+@media (max-width: 768px){.tb{display: block !important;}}
+.cta {
+ position: relative;
+ margin: auto;
+ padding: 12px 18px;
+ transition: all 0.2s ease;
+ border: none;
+ background: none;
+}
+
+.cta:before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ display: block;
+ border-radius: 50px;
+ background: #b1dae7;
+ width: 45px;
+ height: 45px;
+ transition: all 0.3s ease;
+}
+
+.cta span {
+ position: relative;
+ font-family: "Ubuntu", sans-serif;
+ font-size: 18px;
+ font-weight: 700;
+ letter-spacing: 0.05em;
+ color: #234567;
+}
+
+.cta svg {
+ position: relative;
+ top: 0;
+ margin-left: 10px;
+ fill: none;
+ stroke-linecap: round;
+ stroke-linejoin: round;
+ stroke: #234567;
+ stroke-width: 2;
+ transform: translateX(-5px);
+ transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+ width: 100%;
+ background: #b1dae7;
+}
+
+.cta:hover svg {
+ transform: translateX(0);
+}
+
+.cta:active {
+ transform: scale(0.95);
+}
+
+element.style {
+}
+.gldl {
+    text-align: end;
+    margin: 0px 0px 5px 30px;
+}

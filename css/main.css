@@ -1,0 +1,342 @@
+/*@import url('https://fonts.useso.com/css?family=Source+Sans+Pro:200,300,400,700');*/
+
+			body {
+				background-color: #000000;
+				/*font-family: 'Source Sans Pro', sans-serif;*/
+				overflow-x: hidden;
+			}
+
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+				height: 100%;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+
+			a:focus {
+				outline: none;
+			}
+
+			/*---------------------------------------
+			  BUTTON              
+			-----------------------------------------*/
+			.btn-a {
+				border-bottom: 2px solid #fff;
+				border-left: 2px solid #fff;
+				border-top: 2px solid #fff;
+				border-right: 1px solid #fff;
+				color: #fff;
+				transition: all 0.3s ease;
+				background: transparent;
+				padding: 14px 24px;
+				font-size: 12px;
+				letter-spacing: 2px;
+				border-radius: 4px 0px 0px 4px;
+				line-height: 1.33333;
+				display: inline-block;
+				text-align: center;
+				font-weight: bold;
+
+			}
+
+			.btn-a:hover {
+				color: #fff;
+				background: #1784fb;
+				border-color: #1784fb;
+				text-decoration: none;
+
+			}
+
+			.btn-b {
+				border-bottom: 2px solid #fff;
+				border-left: 1px solid #fff;
+				border-top: 2px solid #fff;
+				border-right: 2px solid #fff;
+				color: #fff;
+				transition: all 0.3s ease;
+				background: transparent;
+				padding: 14px 10px;
+				font-size: 12px;
+				letter-spacing: 2px;
+				border-radius: 0px 4px 4px 0px;
+				line-height: 1.33333;
+				display: inline-block;
+				text-align: center;
+				font-weight: bold;
+
+			}
+
+			.btn-b:hover {
+				color: #fff;
+				background: #1784fb;
+				border-color: #1784fb;
+				text-decoration: none;
+
+			}
+
+			/*---------------------------------------
+			  TYPOGRAPHY              
+			-----------------------------------------*/
+
+
+
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				font-weight: 300;
+			}
+
+			h1 {
+				font-size: 40px;
+				font-weight: 200;
+				line-height: 50px;
+			}
+
+			h2 {
+				font-size: 30px;
+				line-height: 40px;
+				margin-top: 0;
+			}
+
+			h3 {
+				font-size: 20px;
+				font-weight: bold;
+				line-height: 32px;
+			}
+
+			h4 {
+				color: #505050;
+				font-size: 18px;
+				line-height: 28px;
+			}
+
+			p {
+				color: #757575;
+				font-size: 16px;
+				font-weight: 300;
+				line-height: 29px;
+				letter-spacing: 0.5px;
+			}
+
+			.tlinks {
+				text-indent: -9999px;
+				height: 0;
+				line-height: 0;
+				font-size: 0;
+				overflow: hidden;
+			}
+
+
+			/*---------------------------------------
+			  MENU             
+			-----------------------------------------*/
+
+			.custom-navbar {
+				margin-bottom: 0;
+
+				padding: 20px 0;
+			}
+
+			.custom-navbar .navbar-brand {
+				color: #f9f9f9;
+				font-weight: normal;
+				font-size: 25px;
+				display: inline-block;
+			}
+
+			.custom-navbar .nav li a {
+				font-size: 16px;
+				font-weight: normal;
+				color: #f9f9f9;
+				letter-spacing: 0.5px;
+				-webkit-transition: all ease-in-out 0.4s;
+				transition: all ease-in-out 0.4s;
+				padding: 0;
+				margin: 15px 20px;
+				text-transform: uppercase;
+			}
+
+			.custom-navbar .navbar-nav>li>a:hover,
+			.custom-navbar .navbar-nav>li>a:focus {
+				background-color: transparent;
+				color: #ffffff;
+			}
+
+			.custom-navbar .navbar-nav li a:after {
+				content: "";
+				position: absolute;
+				display: block;
+				width: 0px;
+				height: 2px;
+				margin: auto;
+				background: transparent;
+				transition: width .3s ease, background-color .3s ease;
+			}
+
+			.custom-navbar .navbar-nav li a:hover:after,
+			.custom-navbar .nav li.active>a:after {
+				background: #ffffff;
+				color: #ffffff;
+				width: 100%;
+			}
+
+			.custom-navbar .nav li.active>a {
+				background-color: transparent;
+				color: #ffffff;
+			}
+
+			.custom-navbar .navbar-toggle {
+				border: none;
+				padding-top: 10px;
+			}
+
+			.custom-navbar .navbar-toggle {
+				background-color: transparent;
+			}
+
+			.custom-navbar .navbar-toggle .icon-bar {
+				background: #ffffff;
+				border-color: transparent;
+			}
+
+			@media(min-width:768px) {
+				.custom-navbar {
+					background: 0 0;
+				}
+
+				.custom-navbar.top-nav-collapse {
+					background: #4dc47d;
+					padding: 15px 0;
+				}
+			}
+
+
+			/*---------------------------------------
+			  HOME             
+			-----------------------------------------*/
+
+			#home {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				-webkit-align-items: center;
+				-ms-flex-align: center;
+				align-items: center;
+				height: 100vh;
+				position: relative;
+				padding-top: 10em;
+			}
+
+
+
+			#home h2 {
+				color: #ffffff;
+
+			}
+
+			#home p {
+				color: rgba(250, 250, 250, 0.7);
+			}
+
+			#home .overlay {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.3);
+			}
+
+
+
+			/*---------------------------------------
+			  FOOTER              
+			-----------------------------------------*/
+
+			#footer {
+				height: 40px;
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+				text-align: center;
+				color: #fff;
+				font-family: Arial;
+				font-size: 14px;
+				letter-spacing: 1px;
+			}
+
+			.footer-d {
+
+
+				position: absolute;
+				bottom: 28px;
+				left: 50%;
+
+				margin-left: -450px;
+				color: #fff;
+				padding: 0px 0;
+				line-height: 10px;
+				font-weight: 300;
+			}
+
+			.footer-p {
+
+				margin-bottom: 4px;
+				margin-top: 20px;
+				display: inline-block;
+			}
+			.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  min-height: 50px;
+  max-width: 200px;
+  padding: 0 1rem;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 6px 0 0 6px;
+  background-color: transparent;
+}
+
+.button--submit {
+  min-height: 50px;
+  padding: .5em 1em;
+  border: none;
+  border-radius: 0 6px 6px 0;
+ background-color: #ffffff;
+  color: #000;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
+
+.button--submit:hover {
+  background-color: #5e5dcd;
+}
+
+.input:focus, .input:focus-visible {
+  border-color: #3898EC;
+  outline: none;
+}
